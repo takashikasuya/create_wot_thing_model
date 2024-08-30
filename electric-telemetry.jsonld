@@ -8,22 +8,13 @@
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Dimmable Colored Lamp",
+    "title": "Telemetry",
     "version": {
         "model": "1.0.0"
     },
 
     "tm:optional": [],
     "properties": {
-        "dimmer-level": {
-            "@type": "om2:Percentage",
-            "title": "Dimmer level",
-            "type": "number",
-            "unit": "om2:percent",
-            "minimum": 0,
-            "maximum": 1,
-            "multipleOf": 0.001
-        },
         "acqTime": {
             "@type": "om2:Percentage",
             "title": "TEST level",
