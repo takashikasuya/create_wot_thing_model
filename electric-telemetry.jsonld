@@ -24,6 +24,11 @@
             "maximum": 1,
             "multipleOf": 0.001
         },
+        "test": {
+            "title": "Test",
+            "type": "string",
+            "description":"Test",
+        },
         "acqTime": {
             "type": "time:Instant",
             "description": "Acquisition time of the telemetry data",
