@@ -24,14 +24,6 @@
             "maximum": 1,
             "multipleOf": 0.001
         },
-        "test": {
-            "@type": "om2:Percentage",
-            "title": "Test level",
-            "type": "number",
-            "unit": "om2:percent",
-            "minimum": 0,
-            "maximum": 1
-        },
         "acqTime": {
             "type": "time:Instant",
             "description": "Acquisition time of the telemetry data",
