@@ -31,13 +31,6 @@
             "readOnly": true,
             "title": "Connection Time",
             "@type": "time:inXSDDateTime"
-        },
-        "telemetries": {
-            "type": "array",
-            "description": "\u5b9f\u969b\u306e\u30c7\u30fc\u30bf \u540c\u6642\u523b\u306e\u5168\u8a08\u6e2c\u70b9\u3092\u914d\u5217\u3067\u53d6\u308a\u307e\u3068\u3081\u9001\u4fe1",
-            "readOnly": true,
-            "title": "Telemetries",
-            "@type": "ext:Telemetry"
         }
     }
 }
