@@ -24,7 +24,7 @@
     "links": [
         {
             "rel": "tm:submodel",
-            "href": "https://localhost:5000/wot/tm/electric-telemetry.jsonld",
+            "href": "https://github.com/takashikasuya/create_wot_thing_model/blob/main/electric-telemetry.jsonld",
             "type": "application/tm+json",
             "instanceName": "Telemetry"
         }
