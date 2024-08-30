@@ -9,18 +9,6 @@
     "@type": "tm:ThingModel",
     "title": "Electricity Monitoring System",
     "description": "Monitor the electricity consumption of a building",
-    "securityDefinitions": {
-        "nosec_sc": {
-            "scheme": "nosec"
-        },
-        "basic_sc": {
-            "scheme": "basic",
-            "in": "header"
-        }
-    },
-    "security": [
-        "basic_sc"
-    ],
     "links": [
         {
             "rel": "tm:submodel",
