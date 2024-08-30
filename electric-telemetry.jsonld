@@ -31,13 +31,6 @@
             "unit": "om2:percent",
             "minimum": 0,
             "maximum": 1
-        },
-        "connTime": {
-            "type": "time:Instant",
-            "description": "publish time of the telemetry data",
-            "readOnly": true,
-            "title": "Connection Time",
-            "@type": "time:inXSDDateTime"
         }
     }
 }
