@@ -16,14 +16,13 @@
     "tm:optional": [],
     "properties": {
         "dimmer-level": {
-
             "title": "Dimmer level",
             "type": "number",
             "unit": "om2:percent",
             "minimum": 0,
             "maximum": 1,
             "multipleOf": 0.001,
-            "@type": "om2:Percentage",
+            "@type": "om2:Percentage"
         },
         "test": {
             "@type": "om2:Percentage",
@@ -31,8 +30,7 @@
             "type": "number",
             "unit": "om2:percent",
             "minimum": 0,
-            "maximum": 1,
-
+            "maximum": 1
         },
         "acqTime": {
             "type": "time:Instant",
