@@ -11,17 +11,41 @@
     "title": "Electric Telemetry",
     "description": "Telemetry data of the Electricity Monitoring System",
     "properties": {
-        "acqTime": {
-            "type": "string",
-            "description": "Acquisition time of the telemetry data",
-            "readOnly": true,
-            "title": "Acquisition Time",
-        },
-        "connTime": {
-            "type": "string",
-            "description": "publish time of the telemetry data",
-            "readOnly": true,
-            "title": "Connection Time",
-        }
+        "color": {
+            "title": "Color",
+            "description": "The current color.",
+            "type": "object",
+            "properties": {
+                "r": {
+                    "title": "Red",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                },
+                "g": {
+                    "title": "Green",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                },
+                "b": {
+                    "title": "Blue",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                },
+                "w": {
+                    "title": "White",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                }
+            },
+            "required": [
+                "r",
+                "g",
+                "b"
+            ]
     }
+}
 }
