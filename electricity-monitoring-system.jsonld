@@ -1,0 +1,39 @@
+{
+    "@context": [
+        "https://www.w3.org/2022/wot/td/v1.1",
+        {
+            "@language": "en",
+            "ditto": "https://ditto.eclipseprojects.io/wot/ditto-extension#"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Electricity Monitoring System",
+    "description": "Monitor the electricity consumption of a building",
+    "securityDefinitions": {
+        "nosec_sc": {
+            "scheme": "nosec"
+        },
+        "basic_sc": {
+            "scheme": "basic",
+            "in": "header"
+        }
+    },
+    "security": [
+        "basic_sc"
+    ],
+    "links": [
+        {
+            "rel": "tm:submodel",
+            "href": "https://localhost:5000/wot/tm/electric-telemetry.jsonld",
+            "type": "application/tm+json",
+            "instanceName": "Telemetry"
+        }
+    ],
+    "properties": {
+        "Supplier": {
+            "type": "string",
+            "description": "System supplier",
+            "readOnly": true
+        }
+    }
+}

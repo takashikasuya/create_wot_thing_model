@@ -1,0 +1,43 @@
+{
+    "@context": [
+        "https://www.w3.org/2022/wot/td/v1.1",
+        {
+            "@language": "en",
+            "ditto": "https://ditto.eclipseprojects.io/wot/ditto-extension#",
+            "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "time": "http://www.w3.org/2006/time#"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Electric Telemetry",
+    "description": "Telemetry data of the Electricity Monitoring System",
+    "securityDefinitions": {
+        "nosec_sc": {
+            "scheme": "nosec"
+        }
+    },
+    "security": "nosec_sc",
+    "properties": {
+        "acqTime": {
+            "type": "time:Instant",
+            "description": "Acquisition time of the telemetry data",
+            "readOnly": true,
+            "title": "Acquisition Time",
+            "@type": "time:inXSDDateTime"
+        },
+        "connTime": {
+            "type": "time:Instant",
+            "description": "publish time of the telemetry data",
+            "readOnly": true,
+            "title": "Connection Time",
+            "@type": "time:inXSDDateTime"
+        },
+        "telemetries": {
+            "type": "array",
+            "description": "\u5b9f\u969b\u306e\u30c7\u30fc\u30bf \u540c\u6642\u523b\u306e\u5168\u8a08\u6e2c\u70b9\u3092\u914d\u5217\u3067\u53d6\u308a\u307e\u3068\u3081\u9001\u4fe1",
+            "readOnly": true,
+            "title": "Telemetries",
+            "@type": "ext:Telemetry"
+        }
+    }
+}
