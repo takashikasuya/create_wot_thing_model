@@ -23,13 +23,6 @@
             "minimum": 0,
             "maximum": 1,
             "multipleOf": 0.001
-        },
-        "acqTime": {
-            "type": "time:Instant",
-            "description": "Acquisition time of the telemetry data",
-            "readOnly": true,
-            "title": "Acquisition Time",
-            "@type": "time:inXSDDateTime"
         }
     }
 }
