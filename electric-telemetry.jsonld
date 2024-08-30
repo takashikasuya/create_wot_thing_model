@@ -2,14 +2,21 @@
     "@context": [
         "https://www.w3.org/2022/wot/td/v1.1",
         {
-            "ditto": "https://ditto.eclipseprojects.io/wot/ditto-extension#",
-            "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
-            "time": "http://www.w3.org/2006/time#"
+            "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Electric Telemetry",
-    "description": "Telemetry data of the Electricity Monitoring System",
+    "title": "Dimmable Colored Lamp",
+    "version": {
+        "model": "1.0.0"
+    },
+    "links": [
+        {
+            "rel": "tm:extends",
+            "href": "https://eclipse-ditto.github.io/ditto-examples/wot/models/colored-lamp-1.0.0.tm.jsonld",
+            "type": "application/tm+json"
+        }
+    ],
     "tm:optional": [],
     "properties": {
         "dimmer-level": {
